@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Very-light-gray);
+
+}
+
+p{
+    font-size: 15px;
+    color: var(--Transparent-white);
+    line-height: 1.6;
+    
+}
+
+.container{
+    padding: 20px;
+    
+    
+}
+
+.card{
+    padding: 30px;
+    
+    
+}
+
+
+h3{
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding:20px 0;
+
+}
+
+button{
+    background-color: var(--Very-light-gray);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top:20px;
+    cursor:pointer;
+    transition:all 2s ease-in-out;
+    
+}
+
+button:hover{
+    color: #fff;
+    background-color: transparent;
+}
+
+
+ .one{
+    color:var(--Bright-orange);
+}
+
+
+.two{
+    color: var(--Dark-cyan);
+}
+
+.three{
+    color:var(--Very-dark-cyan);
+}
+
+
+
+
+.container .sedans{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.container .suv{
+    background-color: var(--Dark-cyan);
+}
+
+.container .luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+.attribution { 
+    font-size: 12px;
+     text-align: center;
+     padding:20px 0;
+
+
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:729px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width:900px;
+        margin: auto;
+    }
+    .container .sedans{
+        background-color: var(--Bright-orange);
+        border-radius: 10px 0 0 10px;
+    }
+
+    .container .luxury{
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0 10px 10px 0;
+    }
+
+    
+
+
+    button{
+        background-color: var(--Very-light-gray);
+        border: 2px solid #fff;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin-top:120px;
+        cursor:pointer;
+        transition:all 2s ease-in-out;
+        
+    }
+
+    
+    
+    
+    
+    
+
+    
+}
+
+
+@media(min-width:1440px){
+    .container{
+        max-width:1200px;
+    }
+}
